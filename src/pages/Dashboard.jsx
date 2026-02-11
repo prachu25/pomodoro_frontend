@@ -37,7 +37,7 @@ const Dashboard = () => {
 
     const handleLogout = () => {
         localStorage.removeItem("userId");
-        navigate("/login");
+        navigate("/");
     };
 
     return (
@@ -82,7 +82,7 @@ const Dashboard = () => {
                     </Link>
                 </nav>
 
-                <div className="absolute bottom-10">
+                <div className="absolute bottom-8">
                     <button
                         onClick={handleLogout}
                         className="flex items-center gap-3 text-red-400 hover:text-red-500"

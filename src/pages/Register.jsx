@@ -36,7 +36,7 @@ const Register = () => {
             setMessage("Account created successfully");
 
             setTimeout(() => {
-                navigate("/login");
+                navigate("/");
             }, 1500);
 
         } catch (err) {
@@ -124,7 +124,7 @@ const Register = () => {
                     )}
 
                     <Link
-                        to="/login"
+                        to="/"
                         className="block text-center text-gray-400 text-sm mt-4"
                     >
                         Have an account? Log in to continue
